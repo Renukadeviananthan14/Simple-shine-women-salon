@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Shine-Women Salon</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.png">
+</head>
+<body>
+    
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="" height="80px" width="100px">
+      </div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+    
+  
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <header id="hero">
+    <div class="hero-content">
+      <h2>Be Beautiful, Be You</h2>
+      <p>Discover the latest beauty trends and get pampered by the best professionals.</p>
+      <a href="https://wa.me/9196596 06639" target="_blank" class="btn-primary">Book Appointment</a>
+    </div>
+  </header>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <br>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Premium</h3>
+        <ul>
+          <li class="list">Facial</li>
+          <li class="list">Haircut</li>
+        </ul>
+        <button class="btn-primary">₹2999</button>
+      </div>
+      <div class="card">
+        <h3>Gold</h3>
+        <ul>
+          <li class="list">Haircut</li>
+          <li class="list">Hair Color</li>
+          <li class="list">Waxing</li>
+        </ul>
+        <button class="btn-primary">₹1999</button>
+      </div>
+      <div class="card">
+        <h3>Silver</h3>
+        <ul>
+          <li class="list">Threading</li>
+          <li class="list">Basic Facial</li>
+          <li class="list">Hair Wash</li>
+        </ul>
+        <button class="btn-primary">₹999</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="founder">
+    <h2>Meet the Founder</h2>
+    <br>
+    <div class="founder-profile">
+      <img src="founder.jpeg" alt="Founder Photo">
+      <div>
+        <h3>Mrs.Nivetha</h3>
+        <p>Founder & Creative Director</p>
+        <a href="#" class="btn-primary">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <footer>
+    <p>Designed By Simple Shine-Women Salon.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
